@@ -4,7 +4,7 @@ btn = document.querySelectorAll(".toggle-btn");
 
 const saved = localStorage.getItem("savee");
 
-if (!isNaN(saved)) {
+if (saved !== null) {
   answer[saved].classList.add("show");
   btn[saved].innerHTML = "-";
 }
